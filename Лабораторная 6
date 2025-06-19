@@ -1,0 +1,8 @@
+class Meta(type):
+def new (cls, name, bases, dct):
+dct['hello'] = lambda self: "Hello from " + name
+return super(). new (cls, name, bases, dct)
+class MyClass(metaclass=Meta):
+pass
+obj = MyClass()
+print(obj.hello())
