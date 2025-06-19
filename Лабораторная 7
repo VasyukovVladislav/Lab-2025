@@ -1,0 +1,12 @@
+class MyContainer:
+def init (self, data):
+self._data = data
+def getitem (self, index):
+return self._data[index]
+def len (self):
+return len(self._data)
+def iter (self):
+return iter(self._data)
+c = MyContainer([1, 2, 3])
+for i in c:
+print(i)
