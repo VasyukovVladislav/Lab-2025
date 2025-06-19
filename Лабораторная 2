@@ -1,0 +1,16 @@
+class Person:
+def init (self, name, age):
+self.name = name
+self.age = age
+def str (self):
+return f"{self.name}, {self.age} лет"
+def repr (self):
+return f"Person(name={self.name!r}, age={self.age})"
+p = Person("Александр", 20)
+print(str(p))
+print(repr(p))
+
+# РЕЗУЛЬТАТЫ ТЕСТИРОВАНИЯ
+
+str(p): Александр, 20 лет
+repr(p): Person(name='Александр', age=20)
